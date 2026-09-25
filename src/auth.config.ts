@@ -17,6 +17,11 @@ export default {
     Google({
       clientId: googleId,
       clientSecret: googleSecret,
+      authorization: {
+        params: {
+          prompt: "select_account",
+        },
+      },
     }),
   ],
   pages: {

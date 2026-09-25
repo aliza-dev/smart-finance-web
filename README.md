@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/landing-page.jpg" alt="Smart Finance Landing Page" width="100%">
+  <img src="assets/landing-page.jpg" alt="Smart Finance Landing Page" width="100%">
   
   <br />
   <br />
@@ -45,19 +45,16 @@
 ## ✨ Features
 
 ### 🔐 Secure Authentication & Session Management
-![Authentication Demo](https://via.placeholder.com/800x400.png?text=Authentication+Demo+GIF)
 * **Enterprise Security:** Stateless, highly secure session management powered by NextAuth.js.
 * **Frictionless Onboarding:** Single-click OAuth integrations mapping to secure Google and GitHub identity providers.
 * **Route Protection:** Middleware-driven route protection ensuring strictly authorized access to financial data.
 
 ### 📊 Comprehensive Expense Management
-![Dashboard Demo](https://via.placeholder.com/800x400.png?text=Dashboard+Demo+GIF)
 * **Real-time Dashboard:** A dynamic, centralized hub providing immediate visibility into daily, weekly, and monthly cash flow.
 * **Goal-Oriented Planning:** Robust mechanisms to define, track, and visualize progress against specific financial targets.
 * **Intelligent Categorization:** Dynamic tagging and categorization for granular expense tracking and auditing.
 
 ### 🧠 AI-Powered Analytics
-![Analytics Demo](https://via.placeholder.com/800x400.png?text=Analytics+Demo+GIF)
 * **Pattern Recognition:** Machine learning algorithms to detect spending anomalies and highlight trends.
 * **Actionable Insights:** Personalized, AI-driven recommendations designed to optimize budgeting and accelerate wealth generation.
 

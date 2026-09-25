@@ -1,36 +1,163 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Smart Finance (SmartSpend) 💰
 
-## Getting Started
+> An intelligent enterprise-grade platform for managing expenses, setting financial goals, and gaining AI-powered insights.
 
-First, run the development server:
+![Deployment Status](https://img.shields.io/badge/deployment-live%20on%20Vercel-success?style=for-the-badge&logo=vercel)
+![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue?style=for-the-badge&logo=typescript)
+
+---
+
+## ✨ Features
+
+### 🔐 Authentication
+* **Secure Login:** Seamless and secure user authentication powered by NextAuth.js.
+* **OAuth Integrations:** One-click login using **Google** and **GitHub** providers.
+* **Account Management:** Robust session handling and secure credential management.
+
+### 📊 Expense Management
+* **Intuitive Dashboard:** A clean, responsive interface to track daily, weekly, and monthly spending.
+* **Goal Setting:** Define personalized financial goals and monitor progress in real-time.
+* **Categorization:** Automatically organize expenses into customizable categories.
+
+### 🧠 AI Insights
+* **Smart Analytics:** Leverage AI to identify spending patterns and anomalies.
+* **Actionable Advice:** Receive personalized recommendations on how to save money and budget better.
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+* **Framework:** Next.js (App Router)
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS
+
+### Backend
+* **API:** Next.js Server Actions & Route Handlers
+* **Authentication:** NextAuth.js (Auth.js)
+* **ORM:** Prisma
+
+### Database
+* **Database Engine:** Neon PostgreSQL (Serverless)
+
+---
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have the following installed:
+* **Node.js** (v18 or higher)
+* **npm** (or yarn/pnpm)
+* A **Neon PostgreSQL** database instance
+
+---
+
+## 🚀 Installation
+
+Follow these steps to set up the project locally:
+
+1. **Clone the repository**
+   ```bash
+   git clone [https://github.com/yourusername/smart-finance.git](https://github.com/yourusername/smart-finance.git)
+   cd smart-finance
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Generate Prisma Client**
+   ```bash
+   npx prisma generate
+   ```
+
+4. **Sync the database schema**
+   ```bash
+   npx prisma db push
+   ```
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env` file in the root directory and add the following keys. Do not commit this file to version control.
+
+```env
+# Database
+DATABASE_URL="postgresql://user:password@hostname/database?sslmode=require"
+
+# NextAuth Configuration
+NEXTAUTH_URL="http://localhost:3000"
+NEXTAUTH_SECRET="your_generated_secret_key"
+
+# Google OAuth
+GOOGLE_CLIENT_ID="your_google_client_id"
+GOOGLE_CLIENT_SECRET="your_google_client_secret"
+
+# GitHub OAuth
+GITHUB_ID="your_github_client_id"
+GITHUB_SECRET="your_github_client_secret"
+```
+
+---
+
+## 🏃‍♂️ Running the App
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the application in action.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📂 Project Structure
 
-## Learn More
+```text
+smart-finance/
+├── app/                  # Next.js App Router (Pages, Layouts, API routes)
+├── components/           # Reusable UI components
+├── lib/                  # Utility functions, Prisma client, and Auth configuration
+├── prisma/               # Prisma schema and database migrations
+├── public/               # Static assets (images, fonts, etc.)
+├── .env.example          # Environment variables template
+├── package.json          # Project dependencies and scripts
+└── tailwind.config.ts    # Tailwind CSS configuration
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is optimized for deployment on Vercel.
 
-## Deploy on Vercel
+1. Push your code to a GitHub repository.
+2. Import the project into Vercel.
+3. Add all the required Environment Variables in the Vercel dashboard.
+4. **Crucial Step:** Override the default Build Command in Vercel settings to ensure the Prisma Client is generated before building:
+   * **Build Command:**
+     ```bash
+     npx prisma generate && next build
+     ```
+5. Click **Deploy**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+Distributed under the MIT License.

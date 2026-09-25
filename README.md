@@ -209,3 +209,23 @@ We believe in the power of open-source collaboration. If you have an idea to imp
 ## 📄 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+## 👤 Author & Contact
+
+**Aliza Tariq**
+
+* 📧 Email: [alizait1192@gmail.com](mailto:alizait1192@gmail.com)
+* 💻 GitHub: [@aliza-dev](https://github.com/aliza-dev)
+* 🚀 Repository: [aliza-dev/smart-finance-web](https://github.com/aliza-dev/smart-finance-web)
+
+---
+
+<div align="center">
+
+⭐ Star this repository if you found it helpful!
+
+Made with ❤️ By [Aliza Tariq]
+
+</div>

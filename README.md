@@ -2,14 +2,14 @@
   <h1>💰 Smart Finance (SmartSpend)</h1>
   
   <br />
-  
-  <img src="assets/landing-page.jpg" alt="Smart Finance Landing Page" width="100%">
 
   > **Vision**: *To democratize enterprise-grade financial management, enabling individuals to harness AI-driven insights for smarter budgeting, goal setting, and robust wealth tracking within a seamless, secure, and beautiful interface.*
 
   <p>
     <strong>An intelligent, scalable platform for modern expense management and financial clarity.</strong>
   </p>
+
+  <img src="assets/landing-page.jpg" alt="Smart Finance Landing Page" width="100%">
 
 </div>
 

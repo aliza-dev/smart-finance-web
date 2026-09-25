@@ -12,6 +12,7 @@ export default {
     GitHub({
       clientId: githubId,
       clientSecret: githubSecret,
+      allowDangerousEmailAccountLinking: true,
     }),
     Google({
       clientId: googleId,

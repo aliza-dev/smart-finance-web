@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  database:
+    image: postgres:15-alpine
+    container_name: smartfinance_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: smartadmin
+      POSTGRES_PASSWORD: smartpassword123
+      POSTGRES_DB: smartspend_local_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+  web:
+    build: .
+    container_name: smartfinance_next_app
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=postgresql://smartadmin:smartpassword123@database:5432/smartspend_local_db
+    depends_on:
+      - database
+
+volumes:
+  pg_data:
